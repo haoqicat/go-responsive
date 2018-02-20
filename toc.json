@@ -1,14 +1,14 @@
 [
   {
-    "bookId": "001-forward",
+    "episodeId": "001-forward",
     "title": "写在多屏时代"
   },
   {
-    "bookId": "002-handson-git",
-    "title": "第二节"
+    "episodeId": "002-mobile-first",
+    "title": "移动优先"
   },
   {
-    "bookId": "003-ep3",
+    "episodeId": "003-ep3",
     "title": "第三节 Git"
   }
 ]
