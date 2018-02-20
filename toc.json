@@ -8,7 +8,19 @@
     "title": "移动优先"
   },
   {
-    "episodeId": "003-ep3",
-    "title": "第三节 Git"
+    "episodeId": "003-layout",
+    "title": "弹性布局和弹性媒介"
+  },
+  {
+    "episodeId": "004-query",
+    "title": "媒体查询"
+  },
+  {
+    "episodeId": "005-viewport",
+    "title": "视窗"
+  },
+  {
+    "episodeId": "006-patterns",
+    "title": "响应模式"
   }
 ]
