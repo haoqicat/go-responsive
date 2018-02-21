@@ -12,7 +12,7 @@
 
 那 “移动优先” 的响应式设计流程，就是这个样子的，如图所示：
 
-![](images/mobile-first/mobile-first.png)
+![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/mobile-first/mobile-first.png)
 
 Luke 提出这个观点的时候，其实讨论了手机 APP 的各种优势，这个不是本书的关心内容，我们这里的“移动优先的响应式设计”只是针对网站设计而言的。指的是，先开发手机版网页，css 文件中的默认样式就是手机版页面的，然后通过 media-query，逐步添加样式进来，达成平板和桌面版网页。
 
