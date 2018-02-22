@@ -1,26 +1,29 @@
-[
-  {
-    "episodeId": "001-forward",
-    "title": "写在多屏时代"
-  },
-  {
-    "episodeId": "002-mobile-first",
-    "title": "移动优先"
-  },
-  {
-    "episodeId": "003-layout",
-    "title": "弹性布局和弹性媒介"
-  },
-  {
-    "episodeId": "004-query",
-    "title": "媒体查询"
-  },
-  {
-    "episodeId": "005-viewport",
-    "title": "视窗"
-  },
-  {
-    "episodeId": "006-patterns",
-    "title": "响应模式"
-  }
-]
+{
+  "title": "多屏时代",
+  "toc": [
+    {
+      "episodeId": "001-forward",
+      "title": "写在多屏时代"
+    },
+    {
+      "episodeId": "002-mobile-first",
+      "title": "移动优先"
+    },
+    {
+      "episodeId": "003-layout",
+      "title": "弹性布局和弹性媒介"
+    },
+    {
+      "episodeId": "004-query",
+      "title": "媒体查询"
+    },
+    {
+      "episodeId": "005-viewport",
+      "title": "视窗"
+    },
+    {
+      "episodeId": "006-patterns",
+      "title": "响应模式"
+    }
+  ]
+}
