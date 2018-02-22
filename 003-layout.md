@@ -1,5 +1,3 @@
-# 弹性布局和弹性媒介
-
 响应式网站设计主要包括三部分：弹性布局、媒体查询和弹性媒介。这一章我们主要介绍一下弹性布局和弹性媒介。另外，再介绍一下目前最新的 Flexbox CSS 布局方式。
 
 ### 弹性布局
@@ -30,14 +28,14 @@ target / parent = result
 </div>
 ```
 
-一个父元素 main, 包含了两个子元素，子元素 content 居左，另一个子元素 menu 居右，[查看效果](http://book.haoduoshipin.com/go-responsive/demo/layout/fixed/)。
-为了叙述方便，抽取了一些 CSS 样式：
+一个父元素 main, 包含了两个子元素，子元素 content 居左，另一个子元素 menu 居右，[查看效果](http://book.haoduoshipin.com/go-responsive/demo/layout/fixed/)。为了叙述方便，抽取了一些 CSS 样式：
 
 ```css
 .main {
   width: 900px;
 }
-.content, .menu {
+.content,
+.menu {
   margin: 30px 20px;
 }
 .content {
@@ -60,7 +58,6 @@ target / parent = result
 ```
 
 注意，无论父元素 main 变得有多宽，content 和 menu 区块的宽度和页边距都会按比例缩放。[点击这里](http://book.haoduoshipin.com/go-responsive/demo/layout/flexible/)，查看弹性布局效果。你需要调整浏览器窗口的大小才能看到变化。知道了弹性布局的概念和流体网格计算公式，并将其运用起来，你就能创建一个完全动态的网站，网站内容按照视窗尺寸缩放。为了更好的掌控弹性布局，你也可以对 min-width、max-width、 min-height 和 max-height 属性值采用相对长度单位。
-
 
 [html5rocks](http://www.html5rocks.com/en/) 的首页文章列表就是流体网格应用的一个典型例子。另外，类似于 Bootstrap 这样的 css 框架，会自带[流体网格](http://getbootstrap.com/2.3.2/scaffolding.html) 。
 
@@ -146,10 +143,10 @@ flex 容器，当空间变大时，其中的子元素也会随之扩大； 当�
 
 ### 参考链接
 
-- <http://learn.shayhowe.com/advanced-html-css/responsive-web-design/>
-- <https://medium.com/@simurai/sizing-web-components-8f433689736f>
-- <http://clearleft.com/thinks/anequalheightgridusingflexbox/>
-- [google&udacity 响应式课程的 fluid grid 介绍](https://www.udacity.com/course/viewer#!/c-ud893/l-3533879576/m-3618968538)
-- [google&udacity 响应式课程的 Flexbox 介绍](https://www.udacity.com/course/viewer#!/c-ud893/l-3533879576/m-3604458542)
+* <http://learn.shayhowe.com/advanced-html-css/responsive-web-design/>
+* <https://medium.com/@simurai/sizing-web-components-8f433689736f>
+* <http://clearleft.com/thinks/anequalheightgridusingflexbox/>
+* [google&udacity 响应式课程的 fluid grid 介绍](https://www.udacity.com/course/viewer#!/c-ud893/l-3533879576/m-3618968538)
+* [google&udacity 响应式课程的 Flexbox 介绍](https://www.udacity.com/course/viewer#!/c-ud893/l-3533879576/m-3604458542)
 
 <!-- https://teamtreehouse.com/library/responsive-layouts/responsive-patterns/flexbox -->

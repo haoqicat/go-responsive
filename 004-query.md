@@ -1,7 +1,4 @@
-# 媒体查询
-
 响应式网站设计只有弹性布局这一个技巧是不够用的，媒体查询（ media queries ）也是响应式设计的核心技巧之一。媒体查询是可应用于 CSS 样式的简单过滤器。有了这些过滤器，我们可以根据设备呈现内容的特点轻松更改样式，包括显示屏类型、宽度、高度、方向甚至是分辨率。
-
 
 ![](images/query/css-media-queries.jpg)
 
@@ -24,10 +21,14 @@
 
 ```css
 /* @media Rule */
-@media screen and (min-width: 480px) {...}
+@media screen and (min-width: 480px) {
+  ...;
+}
 
 /* @import Rule */
-@import url(main.css) screen and (min-width: 480px) {...}
+@import url(main.css), screen and (min-width: 480px) {
+  ...;
+}
 ```
 
 每一个媒体查询可能会包含一个媒体类型，紧接着是一个或多个表达式。常见的媒体类型包括 all、screen、print、tv 和 braille。HTML5 规范包含了新的媒体类型，甚至包括三维眼镜。若媒体查询中没有指定媒体类型，则默认为 screen。
@@ -38,22 +39,28 @@
 
 媒体查询中的逻辑操作符可以构建强大的表达式。共有三个逻辑操作符，分布是 and、not 和 only。
 
-在媒体查询中使用 and 逻辑操作符可以添加新的表达式，并且浏览器或设备必须满足列出的所有条件，才能执行相关的 css 样式。多个媒体查询之间用逗号分隔开。举例说明，若选择宽度介于800像素到1024像素之间的所有媒体类型，该如何表示呢？
+在媒体查询中使用 and 逻辑操作符可以添加新的表达式，并且浏览器或设备必须满足列出的所有条件，才能执行相关的 css 样式。多个媒体查询之间用逗号分隔开。举例说明，若选择宽度介于 800 像素到 1024 像素之间的所有媒体类型，该如何表示呢？
 
 ```css
-@media all and (min-width: 800px) and (max-width: 1024px) {...}
+@media all and (min-width: 800px) and (max-width: 1024px) {
+  ...;
+}
 ```
 
 not 逻辑操作符对后面的表达式取反操作。下面的示例，css 样式将应用于非彩色屏幕的设备
 
 ```css
-@media not screen and (color) {...}
+@media not screen and (color) {
+  ...;
+}
 ```
 
 only 逻辑操作符是一个新出现的运算符，使用 HTML4 算法的浏览器并不支持它，这样一些较老的，不支持媒体查询的浏览器就不能使用它所给定的样式了。
 
 ```css
-@media only screen and (color) {...}
+@media only screen and (color) {
+  ...;
+}
 ```
 
 当使用 not 和 only 逻辑操作符的时候，如果没有指明媒体类型，则默认值为 all。
@@ -69,7 +76,9 @@ only 逻辑操作符是一个新出现的运算符，使用 HTML4 算法的浏�
 这个 height 和 width 特征来自于视窗渲染区域的高度和宽度，比方说浏览器窗口。另外两个，device-height 和 device-width 特征是基于输出设备的高度和宽度的，可能要比实际的渲染区域大一些。这些代表高度和宽度的媒体特征，其值既可以用相对单位表示，也可以用绝对单位表示。
 
 ```css
-@media screen and (min-width: 320px) and (max-width: 780px) {...}
+@media screen and (min-width: 320px) and (max-width: 780px) {
+  ...;
+}
 ```
 
 在响应式网站设计中，最常用的媒体特征包括 min-width 和 max-width。与设备特性区分开来，有助于在桌面或移动设备上建立风格一致的网站。
@@ -100,10 +109,10 @@ CSS3-MediaQueries.js 是一个功能比较全，代码量比较大的 js 库，�
 
 引用 Responsive Design Workflow 作者 Stephe Hay 的话来说：
 
->Start with the small screen first, then expand until it looks like
-shit. Time for a breakpoint!
+> Start with the small screen first, then expand until it looks like
+> shit. Time for a breakpoint!
 >
->从你需要适配的最小屏幕宽度开始测试，慢慢地拉伸，当你发现页面像坨屎的时候，一个新的断点就确定了。
+> 从你需要适配的最小屏幕宽度开始测试，慢慢地拉伸，当你发现页面像坨屎的时候，一个新的断点就确定了。
 
 最好的方案是，先出手机版的页面，这样内容基本上都是单列布局的。接下来不断拉伸宽度，每当内容看上去很难看松散了，这时候就要确定新的断点，直到你所需要适配的最大屏幕宽度为止。最后，你会发现通过“按内容设置断点”所使用的断点数量远比“屏幕分辨率确定断点”要少。
 
@@ -123,14 +132,14 @@ body {
 }
 ```
 
-也有人提出了“主要临界点”和“次要临界点”的概念。例如我可以给我的页面设置3个“主要临界点”，每到一个，页面结构就会有“大”的调整，例如内容由一列变为两列。在两个临界点之间，有时候需要做一些小的页面调整，比如改变一下按钮大小，这样可以通过设置“次要临近点”来实现。
+也有人提出了“主要临界点”和“次要临界点”的概念。例如我可以给我的页面设置 3 个“主要临界点”，每到一个，页面结构就会有“大”的调整，例如内容由一列变为两列。在两个临界点之间，有时候需要做一些小的页面调整，比如改变一下按钮大小，这样可以通过设置“次要临近点”来实现。
 
 总之，并没有一套“最佳临近点”可以供每个网站都去使用，随着内容不同，每个网站开发者要自己去“找”适合自己的各个临近点。
 
 ### 参考资料
 
-- <http://learn.shayhowe.com/advanced-html-css/responsive-web-design/>
-- [知乎上讨论临界点的帖子](http://www.zhihu.com/question/28653799)
-- [定义临界点](http://responsivedesign.is/strategy/page-layout/defining-breakpoints)
-- [google&udacity 课程的“选择断点”章节](https://www.udacity.com/course/viewer#!/c-ud893/l-3533879576/m-3492369998)
-- <http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/>
+* <http://learn.shayhowe.com/advanced-html-css/responsive-web-design/>
+* [知乎上讨论临界点的帖子](http://www.zhihu.com/question/28653799)
+* [定义临界点](http://responsivedesign.is/strategy/page-layout/defining-breakpoints)
+* [google&udacity 课程的“选择断点”章节](https://www.udacity.com/course/viewer#!/c-ud893/l-3533879576/m-3492369998)
+* <http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/>
