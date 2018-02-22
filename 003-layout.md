@@ -77,7 +77,7 @@ img, video, canvas {
 
 Peter 身在秦皇岛，于是就从网上找了一张山海关的图片来做演示。[查看 demo](http://book.haoduoshipin.com/go-responsive/demo/layout/image/)
 
-![](images/layout/pass.jpg)
+![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/layout/pass.jpg)
 
 另外，对于“弹性嵌入式媒介”，例如 `<iframe>` 和 `<video>` 标签相关的内容，上面的简单方式就不灵了，这部分咱们就不详细介绍了，感兴趣可以参考[这里的 Flexible Embedded Media 介绍](http://learn.shayhowe.com/advanced-html-css/responsive-web-design/#flexible-layouts)。
 

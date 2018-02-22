@@ -8,7 +8,7 @@
 
 那么当一个普通桌面版页面在手机上打开的时候，会发现页面各个元素都会变得很小。
 
-![](images/viewport/iphone_no_viewport.jpg)
+![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/viewport/iphone_no_viewport.jpg)
 
 这是因为手机会自动对页面进行它自认为”最好“的缩放，从而尽量把整个页面能在手机这个小的多的屏幕上整个都装下。这个默认行为是我们在做响应式网页设计的时候不希望看到的，所以在一般的响应式页面中，第一步就是添加上面这一行，来禁用手机的这种默认缩放行为。但是究竟上面这些内容都是什么意思呢？不着急，下面慢慢来聊。
 

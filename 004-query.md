@@ -1,6 +1,6 @@
 响应式网站设计只有弹性布局这一个技巧是不够用的，媒体查询（ media queries ）也是响应式设计的核心技巧之一。媒体查询是可应用于 CSS 样式的简单过滤器。有了这些过滤器，我们可以根据设备呈现内容的特点轻松更改样式，包括显示屏类型、宽度、高度、方向甚至是分辨率。
 
-![](images/query/css-media-queries.jpg)
+![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/query/css-media-queries.jpg)
 
 在 CSS2.1 中定义了媒体类型，通过给 `<link>` 元素添加 media 属性，可以为不同的媒体类型加载不同的样式表。
 
@@ -103,7 +103,7 @@ CSS3-MediaQueries.js 是一个功能比较全，代码量比较大的 js 库，�
 
 正确的方式是，应该按内容设置断点，而不是按设备宽度设置临界点，所以无需考虑成千上万的设备。具体的做法是，还是本着移动优先的思想，先考虑最小宽度的设备，例如 iphone5 ，来进行页面布局。好，这个基本设计稿定下来之后，就可以来把屏幕往宽处拽了（可以使用 Chrome 浏览器的，移动设备调试工具来辅助这一过程）
 
-![](images/query/chrome_mobile.png)
+![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/query/chrome_mobile.png)
 
 直到我们看到，我们的内容看起来已经变得难看了，那么在这个位置，就要来设置一个临界点了。
 
@@ -116,7 +116,7 @@ CSS3-MediaQueries.js 是一个功能比较全，代码量比较大的 js 库，�
 
 最好的方案是，先出手机版的页面，这样内容基本上都是单列布局的。接下来不断拉伸宽度，每当内容看上去很难看松散了，这时候就要确定新的断点，直到你所需要适配的最大屏幕宽度为止。最后，你会发现通过“按内容设置断点”所使用的断点数量远比“屏幕分辨率确定断点”要少。
 
-![](images/query/break-point.jpg)
+![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/query/break-point.jpg)
 
 来举一个简单的例子，比如在小屏幕设备上，我们希望字体是 16px 大小，但是到了大屏设备上我们希望字体也大一些，变成 18px ，那么如果把临界点设置为 480px ，代码就应该写成这样：
 
