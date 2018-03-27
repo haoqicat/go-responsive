@@ -69,8 +69,10 @@ target / parent = result
 
 让图片等媒介具有可伸缩性，一个简单有效的方法，就是把它的 max-width 属性值设置为 100%，意思是说它的最大宽度就是其容器的宽度。这样就能确保当浏览器窗口变小的时候，则网站上的媒介会依据其容器的大小而缩小尺寸，始终包裹在容器内。代码如下所示：
 
-```
-img, video, canvas {
+```css
+img,
+video,
+canvas {
   max-width: 100%;
 }
 ```
@@ -91,13 +93,13 @@ vw、vh、vmin 和 vmax。目前浏览器对这些新加入成员的支持还不
 若使用 em 单位的元素定义了 font-size 为 12px，则此时 1em == 12px，那 2em == 24px；若没有，则找其父元素的字体大小，依次类推直到
 html 元素；若整个页面没有定义字体大小，而是使用浏览器默认字体大小 16px，则 1em == 16px。
 
-```
+```html
 <div class="main">
   <div class="content">em relative length unit</div>
 </div>
 ```
 
-```
+```css
 .main {
   font-size: 20px;
 }
@@ -128,15 +130,15 @@ flex 容器，当空间变大时，其中的子元素也会随之扩大； 当�
 
 [查看 Flexbox 的一个 demo](http://book.haoduoshipin.com/go-responsive/demo/layout/flexbox/)。其中关键部分的代码如下：
 
-```
-  .container {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-  }
+```css
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
 ```
 
 更多 Flexbox 的使用技巧，可以参考 [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes) 。

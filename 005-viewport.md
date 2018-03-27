@@ -2,7 +2,7 @@
 
 如果没有 viewport 的设置，也就是下面这一行：
 
-```
+```html
  <meta name="viewport" content="width=device-width, initial-scale=1" />
 ```
 

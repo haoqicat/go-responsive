@@ -10,7 +10,7 @@
 
 Peter 这个翻译做“列下沉”。最窄的屏幕上，所有元素就垂直一个跟一个排成一列。 屏幕变宽时，到达第一个临界点后，第一个和第二个元素就变成左右两列排布了。后面屏幕继续变宽，第三课元素又”下沉“（反向的）到了这一行中。这是最简单最常见的一种模式。
 
-```
+```html
 <div class="container">
   <div class="box dark_blue"></div>
   <div class="box light_blue"></div>
@@ -18,30 +18,30 @@ Peter 这个翻译做“列下沉”。最窄的屏幕上，所有元素就垂�
 </div>
 ```
 
-```
+```css
 .container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .box {
-    width: 100%;
+  width: 100%;
 }
 @media screen and (min-width: 450px) {
-    .dark_blue {
-        width: 25%;
-    }
-    .light_blue {
-        width: 75%;
-    }
+  .dark_blue {
+    width: 25%;
+  }
+  .light_blue {
+    width: 75%;
+  }
 }
 @media screen and (min-width: 450px) {
-    .dark_blue,
-    .green {
-        width: 25%;
-    }
-    .light_blue {
-        width: 50%;
-    }
+  .dark_blue,
+  .green {
+    width: 25%;
+  }
+  .light_blue {
+    width: 50%;
+  }
 }
 ```
 
@@ -62,7 +62,7 @@ Peter 这个翻译做“列下沉”。最窄的屏幕上，所有元素就垂�
 
 实现方式不唯一，下面的代码是用 flexbox 方式实现的，可供参考。首先 html 写成下面这样：
 
-```
+```html
 <div class="container">
   <div class="box dark_blue"></div>
   <div class="box light_blue"></div>
@@ -74,37 +74,37 @@ Peter 这个翻译做“列下沉”。最窄的屏幕上，所有元素就垂�
 
 对应的 CSS ：
 
-```
+```css
 .container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .box {
-    width: 100%;
+  width: 100%;
 }
 @media screen and (min-width: 450px) {
-    .light_blue,
-    .green {
-        width: 50%;
-    }
+  .light_blue,
+  .green {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 550px) {
-    .dark_blue,
-    .light_blue {
-        width: 50%;
-    }
-    .green,
-    .red,
-    .orange {
-        width: 33.33333%;
-    }
+  .dark_blue,
+  .light_blue {
+    width: 50%;
+  }
+  .green,
+  .red,
+  .orange {
+    width: 33.33333%;
+  }
 }
 @media screen and (min-width: 700px) {
-    .container {
-        width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 ```
 
@@ -122,7 +122,7 @@ Peter 这个翻译做“列下沉”。最窄的屏幕上，所有元素就垂�
 
 当然，这种布局如果使用 flexbox 的 `order` 来实现是非常方便的：
 
-```
+```html
 <div class="container">
   <div class="box dark_blue"></div>
   <div class="container" id="container2">
@@ -135,35 +135,35 @@ Peter 这个翻译做“列下沉”。最窄的屏幕上，所有元素就垂�
 
 CSS 代码如下：
 
-```
+```css
 .container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .box {
-    width: 100%;
+  width: 100%;
 }
 @media screen and (min-width: 500px) {
-    .dark_blue {
-        width: 50%;
-    }
-    #container2 {
-        width: 50%;
-    }
+  .dark_blue {
+    width: 50%;
+  }
+  #container2 {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 600px) {
-    .dark_blue {
-        width: 50%;
-        order: 1; /* appear last, default value is 0*/
-    }
-    #container2 {
-        width: 50%;
-    }
-    .red {
-        width: 50%;
-        order: -1; /* appear first, default value is 0*/
-    }
+  .dark_blue {
+    width: 50%;
+    order: 1; /* appear last, default value is 0*/
+  }
+  #container2 {
+    width: 50%;
+  }
+  .red {
+    width: 50%;
+    order: -1; /* appear first, default value is 0*/
+  }
 }
 ```
 
@@ -181,7 +181,7 @@ Peter 翻译为”抽屉式“。[Off Canvas](https://www.udacity.com/course/vie
 
 实现方式，html 代码如下：
 
-```
+```html
 <nav id="drawer" class="dark_blue">
 </nav>
 <main class="light_blue">
@@ -190,46 +190,46 @@ Peter 翻译为”抽屉式“。[Off Canvas](https://www.udacity.com/course/vie
 
 CSS 代码：
 
-```
+```css
 html,
 body,
 main {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 nav {
-    width: 300px;
-    height: 100%;
-    position: absolute;
-    transform: translate(-300px, 0);
-    transition: transform 0.3s ease;
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  transform: translate(-300px, 0);
+  transition: transform 0.3s ease;
 }
 nav.open {
-    transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 /* breakpoint that repositions everything back to its normal spot */
 @media screen and (min-width: 600px) {
-    nav {
-        position: relative;
-        transform: translate(0, 0);
-    }
-    body {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    main {
-        width: auto;
-        flex-grow: 1;/* Allows the element to grow and take up the full remaining width of the viewport*/
-    }
+  nav {
+    position: relative;
+    transform: translate(0, 0);
+  }
+  body {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  main {
+    width: auto;
+    flex-grow: 1; /* Allows the element to grow and take up the full remaining width of the viewport dsds sjdksjkd jskd skjd ksj dkjsk dj*/
+  }
 }
 ```
 
 还要配合一些 js 代码：
 
-```
+```js
 menu.addEventListener('click', function(e) {
-    drawer.classList.toggle('open');
-    e.stopPropagation();
+  drawer.classList.toggle('open')
+  e.stopPropagation()
 })
 ```
 
