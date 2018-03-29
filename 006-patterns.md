@@ -4,7 +4,7 @@
 
 下面的主要内容和各个图片都来自[这篇文档](https://github.com/santhoshvai/Responsive-Web-Design-Fundamentals/wiki/4-Common-Responsive-patterns)
 
-### Column Drop
+## Column Drop
 
 ![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/pattern/column_drop.png)
 
@@ -50,7 +50,7 @@ Peter 这个翻译做“列下沉”。最窄的屏幕上，所有元素就垂�
 * <http://modernizr.com/>
 * <http://weenudge.com/>
 
-### Mostly Fluid
+## Mostly Fluid
 
 <!-- 文字内容就参考 https://www.udacity.com/course/viewer#!/c-ud893/l-3561069759/m-3484798853 -->
 
@@ -114,7 +114,7 @@ Peter 这个翻译做“列下沉”。最窄的屏幕上，所有元素就垂�
 * <http://mediaqueri.es/ala/>
 * <http://mediaqueri.es/>
 
-### Layout Shifter
+## Layout Shifter
 
 ![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/pattern/layout_shifter.png)
 
@@ -173,7 +173,7 @@ CSS 代码如下：
 * <http://www.anderssonwise.com/>
 * <http://alistapart.com/d/responsive-web-design/ex/ex-site-FINAL.html>
 
-### Off Canvas 抽屉式
+## Off Canvas 抽屉式
 
 ![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/pattern/off_canvas.png)
 
@@ -237,7 +237,7 @@ menu.addEventListener('click', function(e) {
 
 ![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/pattern/hamburger.png)
 
-### 参考
+## 参考
 
 * [google&udactiy 课程](https://www.udacity.com/course/viewer#!/c-ud893/l-3561069759/e-3529819408/m-3571808936)
 * [google developer 上跟上面课程对应的网页](https://developers.google.com/web/fundamentals/layouts/rwd-patterns/mostly-fluid?hl=en)

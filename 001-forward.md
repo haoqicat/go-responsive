@@ -4,7 +4,7 @@
 
 内容应该像水一样，你把它放到茶壶里面，它就是个茶壶，放到茶杯里面它就应该是个茶杯。
 
-### “响应式” 这个词怎么来的？
+## “响应式” 这个词怎么来的？
 
 ![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/forward/responsive-term.png)
 
@@ -14,13 +14,13 @@
 
 换句话说，每个设备上都会去追求最佳的用户体验，设计会自动适应各个设备。在过去的时代，设计师精确的知道自己的媒介材质，比如一张 A4 纸张，一个名片，或者一张海报。但是在我们这个多屏时代，网页设计必须有这样的思维，我们要为“任意尺寸”而去设计。
 
-### 听起来复杂，实则不然
+## 听起来复杂，实则不然
 
 响应式网站设计，只是乍看起来很绕人，其实是有一些很简单的基本原则的。弹性布局，弹性媒体，和 Media-query 是做响应式设计的三个组件，后面我们都会结合实际代码来做详细介绍的。
 
 弹性布局，弹性媒体的叫法来自 <http://learn.shayhowe.com/advanced-html-css/responsive-web-design/> 。在[Ethan 的文章中](http://alistapart.com/article/responsive-web-design/) “弹性布局”（ flexible layout ）没有提，而是被称为 “流体网格”（ fliud grid ），不过意思是差不多的。所谓的弹性媒体，其实主要就是针对图片而言，也包括视频。
 
-### 为什么写这本书？
+## 为什么写这本书？
 
 为什么会写这本书呢？ 这是由于最近我们的几个网站正在由原传统的单一桌面转为响应式，重构代码的过程也是一个愉悦的学习过程，但也发现有两个问题：
 
@@ -30,7 +30,7 @@
 
 ![](https://raw.githubusercontent.com/haoqicat/go-responsive/master/img/forward/gift.jpg)
 
-### 参考链接
+## 参考链接
 
 * <http://blog.teamtreehouse.com/modern-field-guide-responsive-web-design>
 * <http://alistapart.com/article/responsive-web-design/>

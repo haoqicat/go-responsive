@@ -1,6 +1,6 @@
 响应式网站设计主要包括三部分：弹性布局、媒体查询和弹性媒介。这一章我们主要介绍一下弹性布局和弹性媒介。另外，再介绍一下目前最新的 Flexbox CSS 布局方式。
 
-### 弹性布局
+## 弹性布局
 
 所谓的弹性布局，说的是在创建网站的时候，采用流体网格布局方式，动态地调整网站布局宽度以此来适应各种设备屏幕大小。
 
@@ -14,7 +14,7 @@ target / parent = result
 
 上面这个公式的含义是，用一个元素的宽度（ target ）除以它的父元素的宽度（ parent ），那得到的计算结果（ result ）就是这个元素的相对宽度。
 
-### 流体网格
+## 流体网格
 
 说到弹性布局，自然要提到流体网格（ fluid grid ）。流体网格使用相对长度单位，最常用的是百分比或 em 单位。流体网格的属性值，比如 width、margin
 或者 padding 都是用相对长度表示的。
@@ -61,7 +61,7 @@ target / parent = result
 
 [html5rocks](http://www.html5rocks.com/en/) 的首页文章列表就是流体网格应用的一个典型例子。另外，类似于 Bootstrap 这样的 css 框架，会自带[流体网格](http://getbootstrap.com/2.3.2/scaffolding.html) 。
 
-### 弹性媒介
+## 弹性媒介
 
 虽然现在能创建一个动态的网站了，但是要达到完美，还需要做一些事情。比如说，网站中的图片、视频、Flash 动画等等，在变为响应式的时候，就不能简单的按照流体网格计算公式来变化了。
 
@@ -83,7 +83,7 @@ Peter 身在秦皇岛，于是就从网上找了一张山海关的图片来做�
 
 另外，对于“弹性嵌入式媒介”，例如 `<iframe>` 和 `<video>` 标签相关的内容，上面的简单方式就不灵了，这部分咱们就不详细介绍了，感兴趣可以参考[这里的 Flexible Embedded Media 介绍](http://learn.shayhowe.com/advanced-html-css/responsive-web-design/#flexible-layouts)。
 
-### 相对长度单位
+## 相对长度单位
 
 自从 CSS3 问世之后，相对长度家族成员也壮大起来，除了已有的 % 和 em 单位之外，新加入了 rem 单位，还增加了一组相对视窗长度单位如
 vw、vh、vmin 和 vmax。目前浏览器对这些新加入成员的支持还不太好，所以它们还没有普遍使用起来。下面简单介绍一下 em、rem 还有百分比。
@@ -117,7 +117,7 @@ html 元素；若整个页面没有定义字体大小，而是使用浏览器默
 
 一般而言，对于响应式网站，水平方向为流体网格布局，那宽度、左右间距和左右内边距的长度自然采用百分比。像高度、上下间距，还有字体大小等与垂直方向相关的属性则应该使用 em 或者 rem 单位。
 
-### Flexbox 布局
+## Flexbox 布局
 
 为了适应各种类型的显示设备和屏幕大小，在 CSS3 中添加了 Flexbox 特性，它是一个精巧的布局模块，目的是为我们提供一种更加有效的弹性布局方式。
 
@@ -143,7 +143,7 @@ flex 容器，当空间变大时，其中的子元素也会随之扩大； 当�
 
 更多 Flexbox 的使用技巧，可以参考 [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes) 。
 
-### 参考链接
+## 参考链接
 
 * <http://learn.shayhowe.com/advanced-html-css/responsive-web-design/>
 * <https://medium.com/@simurai/sizing-web-components-8f433689736f>
